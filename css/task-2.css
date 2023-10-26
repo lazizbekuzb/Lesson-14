@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .line {
+    height: 70px;
+    width: 5px;
+    animation: playLine 0.3s infinite alternate;
+    
+  }
+  
+  .line:nth-child(1) {
+    animation-delay: 0.04s;
+  }
+  
+  .line:nth-child(2) {
+    animation-delay: 0.09s;
+  }
+  
+  .line:nth-child(3) {
+    animation-delay: 0.14s;
+  }
+  
+  .line:nth-child(4) {
+    animation-delay: 0.19s;
+  }
+  
+  .line:nth-child(5) {
+    animation-delay: 0.2s;
+  }
+  
+  .line:nth-child(6) {
+    animation-delay: 0.24s;
+  }
+  
+  .line:nth-child(7) {
+    animation-delay: 0.3s;
+  }
+  .line:nth-child(8) {
+    animation-delay: 0.34s;
+  }
+  .line:nth-child(9) {
+    animation-delay: 0.4s;
+  }
+  .line:nth-child(10) {
+    animation-delay: 0.45s;
+  }
+  .line:nth-child(11) {
+    animation-delay: 0.48s;
+  }
+  .line:nth-child(12) {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes playLine {
+    from {
+      transform: scaleY(2);
+      background: red;
+    }
+    to {
+      transform: scaleY(1);
+      background-color: green;
+    }
+}
